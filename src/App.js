@@ -3,6 +3,7 @@ import { FiSettings } from 'react-icons/fi';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Navbar, Sidebar } from './components';
+import { useStateContext } from './contexts/ContextProvider';
 import {
   Area,
   Bar,
@@ -23,7 +24,8 @@ import {
 } from './pages';
 
 function App() {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
+
   return (
     <div className='App'>
       <BrowserRouter>
@@ -46,7 +48,7 @@ function App() {
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className='w-72 sidebar dark:bg-secondary-dark-bg bg-white'>
+            <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
               <Sidebar />
             </div>
           ) : (
@@ -55,7 +57,7 @@ function App() {
             </div>
           )}
           <div
-            className={`dark:bg-main-bg bg-main-bg min-h-screen md:ml-72 w-full ${
+            className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${
               activeMenu ? ' md:ml-72' : 'flex-2 '
             }`}
           >
