@@ -2,7 +2,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { FiSettings } from 'react-icons/fi';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Navbar, Sidebar, Stacked } from './components';
+import { Navbar, Sidebar } from './components';
 import {
   Area,
   Bar,
@@ -19,6 +19,7 @@ import {
   Orders,
   Pie,
   Pyramid,
+  Stacked,
 } from './pages';
 
 function App() {
