@@ -1,3 +1,4 @@
+import '@syncfusion/ej2-react-grids/styles/material.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
