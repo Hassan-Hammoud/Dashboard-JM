@@ -2,7 +2,6 @@ import '@syncfusion/ej2-react-grids/styles/material.css';
 import '@syncfusion/ej2/material.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import App from './App';
 import { ContextProvider } from './contexts/ContextProvider';
 import './index.css';

@@ -3,8 +3,7 @@ import {
   SparklineComponent,
   SparklineTooltip,
 } from '@syncfusion/ej2-react-charts';
-
-import React from 'react';
+import '@syncfusion/ej2/material.css';
 
 const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
   return (
