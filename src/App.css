@@ -53,3 +53,64 @@
 .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
   border: none;
 }
+
+/* 🌙 Dark mode overrides for Syncfusion Grid */
+.dark .e-grid,
+.dark .e-gridheader,
+.dark .e-rowcell,
+.dark .e-gridpager,
+.dark .e-headercell {
+  background-color: #33373e !important;
+  color: #e5e7eb !important;
+  border-color: #444 !important;
+}
+
+/* Light mode reset (optional) */
+.light .e-grid,
+.light .e-gridheader,
+.light .e-rowcell,
+.light .e-gridpager,
+.light .e-headercell {
+  background-color: #fff !important;
+  color: #111827 !important;
+}
+
+.dark .e-toolbar {
+  background-color: #2d2f33 !important;
+  border-color: #444 !important;
+}
+
+.dark .e-toolbar-items,
+.dark .e-toolbar-item {
+  color: #e5e7eb !important;
+}
+
+.dark .e-toolbar .e-input-group,
+.dark .e-toolbar .e-input {
+  background-color: #3a3d42 !important;
+  border: 1px solid #555 !important;
+  color: #e5e7eb !important;
+}
+
+.dark .e-toolbar .e-input::placeholder {
+  color: #aaa !important;
+}
+
+.dark .e-toolbar .e-input:focus {
+  background-color: #4a4d52 !important;
+  border-color: #888 !important;
+}
+
+/* Toolbar button hover effects */
+.dark .e-toolbar-item:hover {
+  background-color: #3a3d42 !important;
+}
+
+/* Optional - make grid background consistent */
+.dark .e-grid,
+.dark .e-gridheader,
+.dark .e-rowcell {
+  background-color: #33373e !important;
+  color: #e5e7eb !important;
+  border-color: #444 !important;
+}
