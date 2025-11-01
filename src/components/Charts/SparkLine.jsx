@@ -6,6 +6,11 @@ import {
 import '@syncfusion/ej2/material.css';
 
 const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
+  // Defensive guard: Syncfusion Sparkline may throw if given undefined/empty data
+  if (!data || (Array.isArray(data) && data.length === 0)) {
+    return null;
+  }
+
   return (
     <SparklineComponent
       id={id}
@@ -21,7 +26,10 @@ const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
       type={type}
       tooltipSettings={{
         visible: true,
-        format: 'X: ${x}, Y: ${yval}',
+        // Syncfusion expects literal ${x} placeholders in the format string.
+        // Disable ESLint rule that warns about template curly braces in normal strings.
+        // eslint-disable-next-line no-template-curly-in-string
+          format: 'X: ${x}, Y: ${yval}',
         trackLineSettings: { visible: true },
       }}
     >
