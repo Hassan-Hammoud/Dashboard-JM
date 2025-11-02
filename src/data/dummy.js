@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   AiOutlineAreaChart,
   AiOutlineBarChart,
@@ -31,18 +30,28 @@ import { IoMdContacts } from 'react-icons/io';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { TiTick } from 'react-icons/ti';
-import avatar from './avatar.jpg';
-import avatar2 from './avatar2.jpg';
-import avatar3 from './avatar3.png';
-import avatar4 from './avatar4.jpg';
-import product1 from './product1.jpg';
-import product2 from './product2.jpg';
-import product3 from './product3.jpg';
-import product4 from './product4.jpg';
-import product5 from './product5.jpg';
-import product6 from './product6.jpg';
-import product7 from './product7.jpg';
+export const product1 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113231/product1_hoxoum.jpg';
+export const product3 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113230/product3_uvsinq.jpg';
+export const product5 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113231/product5_ov288b.jpg';
+export const product6 = './product6.jpg';
+export const product7 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113231/product7_lzcrp9.jpg';
 
+export const product2 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113234/product2_upszu0.jpg';
+export const product4 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113234/product4_edknj5.jpg';
+export const avatar2 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113236/avatar2_ahgs3z.jpg';
+export const avatar3 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113236/avatar3_aeeyzk.png';
+export const avatar =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113236/avatar_vz2xnq.jpg';
+export const avatar4 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113237/avatar4_cligky.jpg';
 export const gridOrderImage = props => (
   <div>
     <img
