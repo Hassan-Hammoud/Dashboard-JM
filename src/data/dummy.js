@@ -36,7 +36,8 @@ export const product3 =
   'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113230/product3_uvsinq.jpg';
 export const product5 =
   'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113231/product5_ov288b.jpg';
-export const product6 = './product6.jpg';
+export const product6 =
+  'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113231/product6_iis8ng.jpg';
 export const product7 =
   'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113231/product7_lzcrp9.jpg';
 
@@ -52,6 +53,7 @@ export const avatar =
   'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113236/avatar_vz2xnq.jpg';
 export const avatar4 =
   'https://res.cloudinary.com/dmmtbk5lg/image/upload/v1762113237/avatar4_cligky.jpg';
+
 export const gridOrderImage = props => (
   <div>
     <img
