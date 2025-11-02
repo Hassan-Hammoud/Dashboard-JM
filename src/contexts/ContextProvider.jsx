@@ -29,9 +29,8 @@ export const ContextProvider = ({ children }) => {
   };
 
   // HANDLE CLICK FUNCTION
-  const handleClick = clicked => {
+  const handleClick = clicked =>
     setIsClicked({ ...initialState, [clicked]: true });
-  };
   return (
     <StateContext.Provider
       value={{
