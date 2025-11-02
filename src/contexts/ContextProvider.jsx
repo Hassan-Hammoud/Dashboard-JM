@@ -1,4 +1,4 @@
-const { createContext, useState, useContext } = require('react');
+const { createContext, useState, useContext, useEffect } = require('react');
 
 const StateContext = createContext();
 
@@ -27,6 +27,24 @@ export const ContextProvider = ({ children }) => {
     localStorage.setItem('colorMode', color);
     setThemeSettings(false);
   };
+
+  // keep document root in sync with currentMode so tailwind's `dark:` and
+  // other global styles can react to theme changes. Also set body background.
+  useEffect(() => {
+    if (currentMode === 'Dark') {
+      try {
+        document.documentElement.classList.add('dark');
+        document.body.style.background = '#33373E';
+      } catch (e) {
+        // ignore server-side rendering or test envs where document may be undefined
+      }
+    } else {
+      try {
+        document.documentElement.classList.remove('dark');
+        document.body.style.background = '';
+      } catch (e) {}
+    }
+  }, [currentMode]);
 
   // HANDLE CLICK FUNCTION
   const handleClick = clicked =>

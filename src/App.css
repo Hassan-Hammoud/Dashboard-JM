@@ -114,3 +114,67 @@
   color: #e5e7eb !important;
   border-color: #444 !important;
 }
+
+/* Schedule (Calendar) dark overrides */
+.dark .e-schedule,
+.dark .e-schedule .e-schedule-toolbar,
+.dark .e-schedule .e-content {
+  background: #33373e !important;
+  color: #e5e7eb !important;
+}
+.dark .e-schedule .e-appointment,
+.dark .e-schedule .e-cell.e-work-cells {
+  background: #3a3d42 !important;
+  color: #e5e7eb !important;
+  border-color: #444 !important;
+}
+
+/* Kanban dark overrides */
+.dark .e-kanban,
+.dark .e-kanban .e-card {
+  background: #33373e !important;
+  color: #e5e7eb !important;
+}
+
+/* Rich Text Editor dark overrides */
+.dark .e-richtexteditor,
+.dark .e-richtexteditor .e-content {
+  background: #33373e !important;
+  color: #e5e7eb !important;
+  border-color: #444 !important;
+}
+
+/* 🌙 Dark Mode Overrides for Syncfusion Components */
+.dark .e-grid,
+.dark .e-richtexteditor,
+.dark .e-schedule,
+.dark .e-kanban {
+  background-color: #33373e !important;
+  color: #e5e7eb !important;
+}
+
+/* Toolbar & Search Input for Grids */
+.dark .e-toolbar,
+.dark .e-toolbar-items,
+.dark .e-input,
+.dark .e-input-group {
+  background-color: #3a3f46 !important;
+  color: #e5e7eb !important;
+  border-color: #555 !important;
+}
+
+/* Grid headers and rows */
+.dark .e-gridheader,
+.dark .e-headercell,
+.dark .e-gridcontent,
+.dark .e-rowcell {
+  background-color: #33373e !important;
+  color: #e5e7eb !important;
+  border-color: #444 !important;
+}
+
+/* Calendar event blocks */
+.dark .e-appointment {
+  background-color: #444c56 !important;
+  color: #e5e7eb !important;
+}
